@@ -10,7 +10,7 @@ body {
 
 @keyframes changeBgColor {
   0% {
-    background-color:teal;
+    background-color:lightsalmon;
   }
   10% {
     background-color:lightcoral;
@@ -25,7 +25,7 @@ body {
     background-color:seagreen;
   }
   50% {
-    background-color:teal;
+    background-color:lightblue;
   }
 }
 .container1 {
@@ -40,7 +40,7 @@ h4 {
 h4 span{
   position: relative;
   font-size: 4rem;
-  color:lightgrey;
+  color:white;
   top: 0;
   animation: jump 0.2s ease infinite alternate;
 }
@@ -290,11 +290,11 @@ scroll-text {
   height: 100%;
   text-align: center;
   
-  -moz-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transform: translateY(100%);
   transform: translateY(100%);
   
-  -moz-animation:5s linear infinite;
-  -webkit-animation:5s linear infinite;
-  animation: 5s linear infinite;
+  animation:5s linear infinite;
+  animation:5s linear infinite;
+  animation:5s linear infinite;
 }
