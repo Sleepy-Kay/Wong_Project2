@@ -5,7 +5,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  margin-top: 400px;
+  margin-bottom: 400px;
 }
 
 @keyframes changeBgColor {
@@ -19,10 +20,10 @@ body {
     background-color:lightpink;
   }
   50% {
-    background-color:lightseagreen;
+    background-color:lightcoral;
   }
   75% {
-    background-color:seagreen;
+    background-color:lightsalmon;
   }
   50% {
     background-color:lightblue;
@@ -31,10 +32,13 @@ body {
 .container1 {
   position: relative;
   display: flex;
+  flex-direction: row;
 }
 h4 {
   font-family: "Fuzzy Bubbles", sans-serif;
   text-transform: uppercase;
+  margin-top: 600px;
+  margin-bottom: 600px;
 }
 
 h4 span{
@@ -43,6 +47,7 @@ h4 span{
   color:white;
   top: 0;
   animation: jump 0.2s ease infinite alternate;
+  text-align: center;
 }
 
 @keyframes jump {
@@ -279,22 +284,37 @@ h4 span:nth-child(9) {
   }
 }
 
-scroll-container {
-  border: 3px solid black;
-  border-radius: 5px;
-  height: 100px;
-  overflow: hidden;
+.fade-in-text {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-size: 100px;
+  animation: fadeIn 15s;
+  -webkit-animation: fadeIn 30s;
+  -moz-animation: fadeIn 30s;
+  -o-animation: fadeIn 30s;
+  -ms-animation: fadeIn 30s;
 }
 
-scroll-text {
-  height: 100%;
-  text-align: center;
-  
-  transform: translateY(100%);
-  transform: translateY(100%);
-  transform: translateY(100%);
-  
-  animation:5s linear infinite;
-  animation:5s linear infinite;
-  animation:5s linear infinite;
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
